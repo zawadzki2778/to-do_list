@@ -1,11 +1,13 @@
 const list = document.querySelector(".todolist");
 // const items = list.querySelectorAll(".todolist-item"); //записываем все элементы, которые находятся внутри list
 const items = list.children; // чтобы получить динамическую коллекцию которая будет пропадать из разметки переписываемс помощью children
+const emptyList = document.querySelector(".empty-tasks");
 
 const switchEmptyList = function () {
   console.log(items);
+  // добавляем проверку что длина коллекции равна нулю
   if (items.length === 0) {
-    // добавляем проверку что длина коллекции равна нулю
+    emptyList.classList.remove("hidden"); // удаляем класс hidden чтобы скрыть элемент
     console.log("Все задачи выполнены!");
   }
 };

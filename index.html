@@ -6,7 +6,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <h1 class="temporarily-hidden">Список</h1>
+    <h1 class="visually-hidden">Список</h1>
     <ul class="todolist">
       <li class="todolist-item">
         <label>
@@ -27,9 +27,9 @@
         </label>
       </li>
     </ul>
-    <p class="completed hidden"></p>
+    <p class="empty-tasks hidden"></p>
     <form class="form-add" action="https:// " method="post">
-      <input class="form-add-input" type="text"  aria-label="Описание задачи" placeholder="" required>
+      <input class="form-add-input" type="text"  aria-label="Описание задачи" placeholder="пример задачи" required>
       <button class="form-add-button" type="submit">Добавить задачу</button>
     </form>
 
