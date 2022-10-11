@@ -2,6 +2,12 @@ const list = document.querySelector(".todolist");
 // const items = list.querySelectorAll(".todolist-item"); //записываем все элементы, которые находятся внутри list
 const items = list.children; // чтобы получить динамическую коллекцию которая будет пропадать из разметки переписываемс помощью children
 const emptyList = document.querySelector(".empty-tasks");
+const newItemForm = document.querySelector(".form-add"); //нашли элемент с классом для добавления формы (новой задачи)
+const newItemTitle = newItemForm.querySelector('.form-add-input');
+const templateTask = document.querySelector('#template-task').content;//достаём шаблон и записываем его в переменную (шаблон не виден при отрисовке)
+console.log(templateTask); 
+const newItemTemplate = templateTask.querySelector('.todolist-item');
+console.log(newItemTemplate);
 
 const switchEmptyList = function () {
   console.log(items);
@@ -24,3 +30,9 @@ const addCheckHandler = function (item) {
 for (let i = 0; i < items.length; i++) {
   addCheckHandler(items[i]);
 }
+
+newItemForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();//отменяем отправку формы по умолчанию
+  const taskText = newItemTitle.value;
+  console.log(taskText);
+});
