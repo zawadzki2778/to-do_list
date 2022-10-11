@@ -55,12 +55,12 @@ body {
     height: 16px; 
     margin-right: 16px; 
     background-color: #ffffff;
-    border: 2px solid #69b253;
+    border: 2px solid #a60c0c;
     border-radius: 4px;
   }
   
   .todolist-input:checked + span::before {
-    background-color: #69b253;
+    background-color: #fffb7e;
     background-image: url("check-white.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -68,11 +68,11 @@ body {
   
   .todolist-input:not(:checked):hover + span::before,
   .todolist-input:not(:checked):focus + span::before {
-    background-color: rgba(105, 178, 83, 0.2);
+    background-color: rgba(66, 110, 255, 0.2);
   }
   
   .empty-tasks {
-    color: #69b253;
+    color: #fffb7e;
   }
   
   .empty-tasks::before {
@@ -96,21 +96,21 @@ body {
     margin-right: 16px;
     padding: 12px; 
     font: inherit; 
-    border: 1px solid #a1b5c4;
+    border: 1px solid #a60c0c;
     border-radius: 4px;
   }
   
   .form-add-input:focus {
-    border: 1px solid #69b253;
+    border: 1px solid #a60c0c;
     outline: none;
   }
   
   .form-add-input:hover {
-    box-shadow: 0 0 6px rgba(105, 178, 83, 0.6);
+    box-shadow: 0 0 6px #690000;
   }
   
   .form-add-input::placeholder {
-    color: #a1b5c4;
+    color: #a60c0c;
   }
   
   .form-add-button {
@@ -118,7 +118,7 @@ body {
     padding: 12px;
     font: inherit;
     color: #ffffff;  
-    background-color: #69b253;
+    background-color: #a60c0c;
     border: none;
     border-radius: 4px; 
     user-select: none;
@@ -127,7 +127,7 @@ body {
   
   .form-add-button:hover,
   .form-add-button:focus {
-    background-color: #5aa045;
+    background-color: #690000;
     outline: none;
   }
   
