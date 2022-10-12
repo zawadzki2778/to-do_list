@@ -37,7 +37,7 @@ newItemForm.addEventListener("submit", function (evt) {
   console.log(taskText);
   const task = newItemTemplate.cloneNode(true)//клонируем шаблон
   //добавляем новую задачу c отрисовкой на странице
-  var taskDescription = task.querySelector('span');
+  const taskDescription = task.querySelector('span');
   taskDescription.textContent = taskText;
   list.appendChild(task);
   console.log(task);
