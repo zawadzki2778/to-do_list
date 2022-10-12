@@ -72,7 +72,7 @@ body {
   }
   
   .empty-tasks {
-    color: #fffb7e;
+    color: #690000;
   }
   
   .empty-tasks::before {
@@ -80,7 +80,7 @@ body {
     width: 14px;
     height: 13px;  
     margin-right: 13px;
-    background-image: url("check-green.svg");
+    /* background-image: url("check-green.svg"); */
     background-repeat: no-repeat;
     background-position: center;
   }
